@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PER1=SRAVAN
-PER2=sivaram
+PER1=MODI
+PER2=PK
 
 echo "$PER1:: Hi $PER2, How are you?"
 echo "$PER2:: Hi $PER1, I am fine thanks for asking. How are you doing?"
