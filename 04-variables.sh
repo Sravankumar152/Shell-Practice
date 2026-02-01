@@ -8,4 +8,4 @@ echo "$USER_NAME"
 echo "Enter Your password:"
 read -s password
 
-echo "password" #printing Passwd for only testing purpose
+echo "$password" #printing Passwd for only testing purpose
