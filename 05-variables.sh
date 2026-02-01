@@ -10,6 +10,6 @@ Endtime=$(date +%s)
 
 echo "Script ended at:$Endtime"
 
-totaltime=($Starttime-$Endtime)
+totaltime=($Endtime-$Starttime)
 
 echo "Total time:$totaltime"
