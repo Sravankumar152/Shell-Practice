@@ -8,8 +8,8 @@ sleep 20
 
 Endtime=$(date +%s)
 
-echo "Script ended at:$Endtime"
+#echo "Script ended at:$Endtime"
 
-totaltime=($Endtime-$Starttime)
+totaltime=$((Endtime-Starttime))
 
-echo "Total time:$totaltime"
+echo "Script ended in:$totaltime sec"
