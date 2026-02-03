@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ###special variables
+#special variables can be used in only "double couts"
 
 echo "all args passed through scripts: $@"
 echo "No of variables passed: $#"
