@@ -6,7 +6,7 @@
 echo "all args passed through scripts: $@"
 echo "No of variables passed: $#"
 echo "Script name: $0"
-echo "Present directory: $pwd"
+echo "Present directory: $PWD"
 echo "Who is running: $user"
 echo "Home directory of current user $HOME"
 echo "PID of the script: $$"
