@@ -11,4 +11,4 @@ echo "Total value: $SUM"
 
 fruits=("apple" "bananna" "orange")
 
-echo "$fruits"
+echo $fruits
