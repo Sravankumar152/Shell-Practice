@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=30
+NUMBER=50
 
 if [ $NUMBER -lt 40 ]; then
 
