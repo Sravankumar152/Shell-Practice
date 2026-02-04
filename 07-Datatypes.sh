@@ -10,3 +10,5 @@ echo "Total value: $SUM"
 #Array
 
 fruits=("apple" "bananna" "orange")
+
+echo "$fruits"
