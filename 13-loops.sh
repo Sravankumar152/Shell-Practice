@@ -14,15 +14,15 @@ mkdir -p $LOGS_FOLDER
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
-        echo "$2 ... FAILURE" | tee -a &>> $LOGS_FILE
+        echo "$2 ... FAILURE" | tee -a &>> "$LOGS_FILE"
         exit 1
     else
-        echo "$2 ... SUCCESS" | tee -a &>> $LOGS_FILE
+        echo "$2 ... SUCCESS" | tee -a &>> "$LOGS_FILE"
     fi
 }
 
 for package in $@
 do
-    dnf install $package -y
+    dnf install $package -y |tee -a &>> "$LOGS_FILE"
     VALIDATE $? "$package installation"
 done
