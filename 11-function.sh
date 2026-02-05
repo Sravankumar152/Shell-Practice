@@ -8,7 +8,7 @@ if [ $USER_ID -ne 0 ]; then
 fi
 
 validate(){
-    if [$1 -ne 0 ]; then
+    if [ $1 -ne 0 ]; then
         echo "$2 .... failure"
         exit 1
     else
