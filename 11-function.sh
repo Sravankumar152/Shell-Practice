@@ -16,8 +16,11 @@ validate(){
     fi
 }
 
+dnf update -y
+validate $? "Update"
+
 dnf install nginx -y
 validate $? "Installing nginx"
 
-dnf install mysql -y
+dnf install mysql-server -y
 validate $? "Installing mysql"
