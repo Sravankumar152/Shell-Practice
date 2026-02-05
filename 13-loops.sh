@@ -23,6 +23,6 @@ VALIDATE(){
 
 for package in $@
 do
-    dnf install $package -y | tee -a &>> $LOGS_FILE
+    dnf install $package -y
     VALIDATE $? "$package installation"
 done
