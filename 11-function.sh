@@ -1,26 +1,26 @@
 #!/bin/bash
 
-USER_ID=$(id -u)
+USERID=$(id -u)
 
-if [ $USER_ID -ne 0 ]; then
-    echo "Please run this as a root user"
+if [ $USERID -ne 0 ]; then
+    echo "Please run this script with root user access"
     exit 1
 fi
 
-validate(){
+VALIDATE(){
     if [ $1 -ne 0 ]; then
-        echo "$2 .... failure"
+        echo "$2 ... FAILURE"
         exit 1
     else
-        echo "$2 ... success"
+        echo "$2 ... SUCCESS"
     fi
 }
 
-# dnf update -y
-# validate $? "Update"
-
 dnf install nginx -y
-validate $? "Installing nginx"
+VALIDATE $? "Installing Nginx"
 
-dnf dnf install mysql -y
-validate $? "Installing mysql"
+dnf install mysql -y
+VALIDATE $? "Installing Mysql"
+
+dnf install nodejs -y
+VALIDATE $? "Installing nodejs"
