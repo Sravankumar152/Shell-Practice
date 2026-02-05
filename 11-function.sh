@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USER_ID=0
+USER_ID=$(id -u)
 
 if [ $USER_ID -ne 0 ]; then
     echo "Please run this as a root user"
