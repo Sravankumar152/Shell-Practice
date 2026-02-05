@@ -22,5 +22,5 @@ validate $? "Update"
 dnf install nginx -y
 validate $? "Installing nginx"
 
-dnf install mysql --skip-broken -y
+dnf dnf install mysql -y
 validate $? "Installing mysql"
