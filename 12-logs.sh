@@ -3,7 +3,7 @@
 USERID=$(id -u)
 
 LOGS_FOLDER="/var/log/shell-logs"
-LOGS_FILE="/var/log/shell-logs $0.log"
+LOGS_FILE="/var/log/shell-logs$0.log"
 
 if [ $USERID -ne 0 ]; then
     echo "Please run this script with root user access"
