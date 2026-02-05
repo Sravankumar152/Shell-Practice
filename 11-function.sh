@@ -16,8 +16,8 @@ validate(){
     fi
 }
 
-dnf update -y
-validate $? "Update"
+# dnf update -y
+# validate $? "Update"
 
 dnf install nginx -y
 validate $? "Installing nginx"
